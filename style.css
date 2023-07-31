@@ -1,0 +1,26 @@
+body {
+  background-image: url(/images/campfire.jpg);
+}
+header {
+  text-align: center;
+  color: whitesmoke;
+}
+main {
+  color: whitesmoke;
+  margin-right: 150px;
+  margin-left: 150px
+}
+.labels{    
+    font-family: segoe script;
+    font-size: 20px;
+}
+.conM{
+    margin-left: 200px;
+}
+.commentArea{
+    margin-left: 100px;
+}
+footer {
+  text-align: center;
+  color: whitesmoke;
+}

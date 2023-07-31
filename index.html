@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!--  bootstrap CSSheet -->
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Welcom to our survey form, please give us your two cents!</p>
+    </header>
+    <main>
+        <form id="survey-form" class="survey" action="submit">
+            <label for="gender" class="labels">Gender:</label>
+            <select id="dropdown" name="gender">
+                <option value="male" selected>Male</option>
+                <option value="female">Female</option>
+            </select><br>
+            <label id="number-label" for="user_age" class="labels">Enter Age:</label>
+            <input id="number" type="number" min="16" max="100" value="" name="user_age" placeholder="16" required>
+            <br>
+            <label id="name-label" for="users_name" class="labels">Name:</label>
+            <input type="text" name="users_name" id="name" placeholder="John E. Doe" required>
+            <br>
+            <label id="email-label" for="users_email" class="labels">Email:</label>
+            <input type="email" name="users_email" id="email" placeholder="jd@gmail.com" required>
+            <hr>
+            <div class="conM">
+                <h3>1. Did you enjoy your visit to our establishment?</h3>
+                <label for="yes">Yes</label>
+                <input type="radio" id="user_choice1" name="yes" value="yes">
+                <label for="yes">No</label>
+                <input type="radio" id="user_choice2" name="yes" value="no">
+                <h3>2. Would you like to receive our newsletter & mail-order catalog?</h3>
+                <input type="checkbox" id="subscribeNewsletter" name="newsletter" value="newsletter">
+                <label for="subscribeNewsletter">Subscribe to newsletter?</label>
+                <input type="checkbox" id="subscribeMail-order" name="mail-order" value="mail-order">
+                <label for="subscribeMail-order">Subscribe to mail-order booklet?</label>
+                <br>
+                <input type="checkbox" name="both" id="both" value="both">
+                <label for="both">Both the newsletter & mail-order catalog!</label>
+                <br>
+                <h3>3. Please give us your feed back? (all feed back is good feed back, lol!)</h3>
+                <textarea class="commentArea" name="textarea" rows="15" cols="100"
+                    placeholder="Comment Here"></textarea>
+            </div>
+            <hr>
+            <div style="text-align: right;">
+                <button id="submit" class="btn btn-primary">submit</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <h6>Twisted Cyber Design&copy;2021</h6>
+    </footer>
+</body>
+<!-- DO NOT TOUCH from here down!!! -->
+<!-- JQuery -->
+<script src="./jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap  -->
+<script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+
+</html>
